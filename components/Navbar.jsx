@@ -9,7 +9,7 @@ const Navbar = () => {
 
         <div className={styles.logo}>
         <div className={styles.logo_image}>
-            <Link href="/"><a > <Image src='/Images/WhatsApp_Image_2022-09-07_at_1 2.png' width='50' height='50'></Image></a></Link>
+            <Link href="/"><a > <Image src='/Images/logo.png' width='50' height='50'></Image></a></Link>
         </div>
 
         <div className={styles.logo_text}>
