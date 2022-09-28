@@ -1,0 +1,62 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: red; */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo_image{
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo_text{
+    font-size: 2rem;
+}
+
+.logo .logo_text span{
+    color:#fabd17;
+    font-size: 3rem;
+    padding: 0.1rem 0.1rem 0;
+}
+
+.nav_menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav_menu ul li:nth-child(3){
+    position: relative;
+}
+
+ .arrow{
+    position: absolute;
+    top: 0.2rem;
+    right: -1rem;
+} 
+
+.nav_cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav_cta .login{
+    background: #fabd17;
+    border-radius: 1rem;
+    padding: 1rem;
+   
+}
