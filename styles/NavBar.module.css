@@ -5,27 +5,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     /* background: red; */
 }
 
 .logo{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
-.logo_image{
-    display: flex;
-    align-items: center;
+.logo .logo_icon{
+    margin-top: 1rem;
 }
+
 
 .logo .logo_text{
     font-size: 2rem;
 }
 
 .logo .logo_text span{
-    color:#fabd17;
+    color:var(--primary-color);
     font-size: 3rem;
     padding: 0.1rem 0.1rem 0;
 }
@@ -55,8 +55,63 @@
 }
 
 .nav_cta .login{
-    background: #fabd17;
+    background: var(--primary-color);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
    
+}
+
+.nav_icons{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+   
+
+    .mobile_nav_menu_hidden, .mobile_nav_menu{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 20rem;
+        z-index: 2;
+        background: var(--primary-color);
+        display: grid;
+        place-items: center;
+        font-size: 1.5rem;  
+        transition: all 1s ease;      
+    }
+
+    .mobile_nav_menu{
+        left: 0;
+    }
+
+    .mobile_nav_menu ul, .mobile_nav_menu_hidden ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_icons{
+        display: block;
+    } 
+
+    .arrow{
+        right: -2rem;
+    } 
+}
+
+@media screen and (max-width:480px){
+    .logo .logo_text{
+        font-size: 1rem;
+    }
+    
+    .logo .logo_text span{
+        color:var(--primary-color);
+        font-size: 1.8rem;
+        padding: 0.1rem 0.1rem 0;
+    }
+
+    .logo_icon svg{
+        margin-top:-0.5rem;
+    }
 }

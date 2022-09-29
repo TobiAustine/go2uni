@@ -1,8 +1,107 @@
 import styles from '../styles/Footer.module.css'
+import Link from 'next/link'
+import {FaGraduationCap} from "react-icons/fa"
+import {BsTelephone, BsGlobe} from 'react-icons/bs'
+import {AiFillMail} from 'react-icons/ai'
 
 const Footer = () => {
+    const date = new Date().getFullYear();
   return (
-    <div>Footer</div>
+    <div className={styles.footer}>
+        <div className={styles.footer_top}>
+
+        <div className={styles.footer_item}>
+        <div className={` ${styles.logo} ${styles.footer_head}`}>
+        <div className={styles.logo_icon}>
+            <Link href="/"><a > <FaGraduationCap size={40}></FaGraduationCap></a></Link>
+        </div>
+
+        <div className={styles.logo_text}>
+          
+            <Link href="/"><a href=""><h2>GO2UNI</h2></a></Link> 
+        </div>
+
+        </div>
+
+        <div className={styles.footer_text}>
+            <p>Get fun ways to prepare for your WASSCE, NECO and UTME exams</p>
+
+            <div className={styles.footer_phone}>
+                 <a href="tel:+2348066821089" noreferrer noopener><BsTelephone></BsTelephone> +2348066821089</a>
+            </div>
+
+            <div className={styles.footer_mail}>  <a href="mailto:austineosiene@gmail.com" noreferrer noopener target='_blank'><AiFillMail></AiFillMail>contactus@gmail.com</a>
+        </div>
+
+        </div>
+
+
+        </div>
+
+        <div className={styles.footer_item}>
+        <div className={styles.footer_head}>
+            <h2>Department</h2>
+        </div>
+
+        <div className={styles.footer_list}>
+            <Link href='/'>Science</Link>
+            <Link href='/'>Commercial</Link>
+            <Link href='/'>Art</Link>
+        </div>
+
+
+
+        </div>
+
+
+        <div className={styles.footer_item}>
+        <div className={styles.footer_head}>
+            <h2>Resources</h2>
+        </div>
+        <div className={styles.footer_list}>
+                <Link href='/'>Help Centre</Link>
+                <Link href='/'>Newsletter</Link>
+                <Link href='/'>Blog</Link>
+                <Link href='/'>Testimonials</Link>
+        </div>
+        </div>
+
+        <div className={styles.footer_item}>
+            <div className={styles.footer_head}>
+                <h2>Company</h2>
+            </div>
+            <div className={styles.footer_list}>
+                    <Link href='/'>About Us</Link>
+                    <Link href='/'>Contact Us</Link>
+                    <Link href='/'>FAQs</Link>
+                
+            </div>
+        </div>
+        </div>
+
+        <div className={styles.footer_language}>
+            <BsGlobe></BsGlobe>
+            <select name="language" id="">
+                <option value="English">English</option>
+                <option value="Yoruba">Yoruba</option>
+                <option value="Igbo">Igbo</option>
+                <option value="Hausa">Hausa</option>
+            </select>
+        </div>
+
+
+        <div className={styles.footer_bottom}>
+            <div className={styles.terms}>
+                <Link href='/'>Terms of Service</Link>
+            </div>
+            <div className={styles.copyright}>
+                <p>&copy; {date} <Link href='/'>Go2Uni.com</Link> | All rights reserved</p>
+            </div>
+        </div>
+
+        
+
+    </div>
   )
 }
 
