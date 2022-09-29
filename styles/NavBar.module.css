@@ -67,13 +67,18 @@
 
 @media screen and (max-width:1024px) {
    
+    .nav_cta{
+        gap: 0.5rem;
+        font-size: 0.7rem;
+        margin-right: 1.5rem;
+    }
 
     .mobile_nav_menu_hidden, .mobile_nav_menu{
         position: absolute;
         top: 0;
         left: -100%;
         height: 100vh;
-        width: 20rem;
+        width: 18rem;
         z-index: 2;
         background: var(--primary-color);
         display: grid;

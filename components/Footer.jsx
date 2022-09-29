@@ -30,7 +30,7 @@ const Footer = () => {
                  <a href="tel:+2348066821089" rel='noreferrer noopener'><BsTelephone></BsTelephone> +2348066821089</a>
             </div>
 
-            <div className={styles.footer_mail}>  <a href="mailto:austineosiene@gmail.com" target='_blank' rel='noreferrer noopener' ><AiFillMail></AiFillMail>contactus@gmail.com</a>
+            <div className={styles.footer_mail}>  <a href="mailto:austineosiene@gmail.com" target='_blank' rel='noreferrer noopener' ><AiFillMail ></AiFillMail>contactus@gmail.com</a>
         </div>
 
         </div>

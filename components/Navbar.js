@@ -47,7 +47,7 @@ const  toggleMenuIcon = () => {
         </div>
 
         <div className={styles.nav_icons} onClick={toggleMenuIcon}>
-             {mobileMenu ? <GrFormClose size ={40} /> : <HiMenuAlt3 size = {40}/>} 
+             {mobileMenu ? <GrFormClose size ={25} /> : <HiMenuAlt3 size = {25}/>} 
             
         </div>
 

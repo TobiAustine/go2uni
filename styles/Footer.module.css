@@ -64,6 +64,18 @@
     margin-top: 2rem;
 }
 
+.footer_mail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+
+ .footer_mail svg{
+    padding-left: 0rem;
+} 
+
 
 
 
