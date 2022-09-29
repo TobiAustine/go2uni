@@ -27,10 +27,10 @@ const Footer = () => {
             <p>Get fun ways to prepare for your WASSCE, NECO and UTME exams</p>
 
             <div className={styles.footer_phone}>
-                 <a href="tel:+2348066821089" noreferrer noopener><BsTelephone></BsTelephone> +2348066821089</a>
+                 <a href="tel:+2348066821089" rel='noreferrer noopener'><BsTelephone></BsTelephone> +2348066821089</a>
             </div>
 
-            <div className={styles.footer_mail}>  <a href="mailto:austineosiene@gmail.com" target='_blank' noreferrer noopener ><AiFillMail></AiFillMail>contactus@gmail.com</a>
+            <div className={styles.footer_mail}>  <a href="mailto:austineosiene@gmail.com" target='_blank' rel='noreferrer noopener' ><AiFillMail></AiFillMail>contactus@gmail.com</a>
         </div>
 
         </div>
