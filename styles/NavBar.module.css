@@ -106,6 +106,10 @@
 }
 
 @media screen and (max-width:480px){
+   
+   .navbar{
+    padding: 0 1rem;
+   }
     .logo .logo_text{
         font-size: 1rem;
     }

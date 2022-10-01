@@ -1,0 +1,106 @@
+.hero{
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
+} 
+
+ .container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero_text{
+    width: 80%;
+    padding-top: 2rem;
+}
+
+.hero_text h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero_text h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.hero_text p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero_text .hero_cta{
+    background: var(--primary-color);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.hero_image{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px; 
+    
+    
+}
+
+.hero_image .image1, .hero_image .image3 {
+    padding-left: 8rem;
+}
+
+/* .hero_image > div{
+    position: absolute;
+    object-fit: contain;
+}
+
+.hero_image .image1{
+    position: absolute;
+}
+
+.hero_image * span img{
+    position: absolute;
+} 
+
+.hero_image .image1 span img{
+    top: 5rem;
+    left: 2rem;
+}
+
+.hero_image .image2 span img{
+    top: 2rem;
+    left: 2rem;
+}
+
+.hero_image .image3 span img{
+    top: 2rem;
+    left: 2rem;
+}
+
+.hero_image .image4 span img{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+/* .hero_image:first-child span{
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+} */
+
+/* .hero_image:first-child span img{
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+}
+
+.hero_image:last-child span img{
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+} */
+ 
