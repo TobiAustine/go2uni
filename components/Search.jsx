@@ -8,7 +8,7 @@ const Search = () => {
     <div className={styles.search}>
         <div className={styles.search_container}>
             <div className={styles.search_head}>
-                <h2>What do you need help with? <span>We've got you covered</span></h2>
+                <h2>What do you need help with? <span>We&apos;ve got you covered</span></h2>
             </div>
             <div className={styles.search_body}>
                 <p>We have materials at your disposal, it takes just a search to get <br /> what you need.</p>
@@ -21,13 +21,13 @@ const Search = () => {
             </div>
             
         <div className={styles.line1}>
-        <Image src='/Images/Vector1.png' width={300} height={30}></Image>
+        <Image src='/Images/Vector1.png' width={300} height={30} alt=''></Image>
       </div>
       <div className={styles.line2}>
-        <Image src='/Images/Vector1.png' width={300} height={30}></Image>
+        <Image src='/Images/Vector1.png' width={300} height={30} alt=''></Image>
       </div>
       <div className={styles.ellipse}>
-        <Image src='/Images/Ellipse27.png' width={30} height={30}></Image>
+        <Image src='/Images/Ellipse27.png' width={30} height={30} alt=''></Image>
       </div>
 
         </div>
