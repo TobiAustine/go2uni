@@ -11,14 +11,14 @@ const Categories = () => {
                 <h1>DEPARTMENTS</h1>
                 <p>We have videos on topics across the different departments.</p>
                 <div className={styles.category_head_img}>
-                   <Image src='/Images/Ellipse23.png' width={25} height={25}  ></Image> 
+                   <Image src='/Images/Ellipse23.png' width={25} height={25} alt='ellipse.png'  ></Image> 
                 </div>
                 
             </div>
             <div className={styles.category_body}>
-                <Card src={'/Images/microscope.png'} background={'#F55376'} department='Science'></Card>
-                <Card src={'/Images/market1.png'} background={'#64B4BF'} department='Commercial'></Card>
-                <Card src={'/Images/art-studies.png'} background={'#FABD17'} department='Art'></Card>
+                <Card src={'/Images/microscope.png'} background={'#F55376'} department='Science' alt='microscope.png'></Card>
+                <Card src={'/Images/market1.png'} background={'#64B4BF'} department='Commercial' alt='market.png'></Card>
+                <Card src={'/Images/art-studies.png'} background={'#FABD17'} department='Art' alt='art.png'></Card>
 
             </div>
         </div>
