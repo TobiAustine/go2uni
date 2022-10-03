@@ -7,8 +7,10 @@ import {AiFillMail} from 'react-icons/ai'
 const Footer = () => {
     const date = new Date().getFullYear();
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer}> 
+    <div className={styles.footer_container}>
         <div className={styles.footer_top}>
+           
 
         <div className={styles.footer_item}>
         <div className={` ${styles.logo} ${styles.footer_head}`}>
@@ -27,10 +29,17 @@ const Footer = () => {
             <p>Get fun ways to prepare for your WASSCE, NECO and UTME exams</p>
 
             <div className={styles.footer_phone}>
-                 <a href="tel:+2348066821089" rel='noreferrer noopener'><BsTelephone></BsTelephone> +2348066821089</a>
+                 <a href="tel:+2348066821089" rel='noreferrer noopener'>
+                    <BsTelephone></BsTelephone>
+                    <div className={styles.phone_no}>+2348066821089
+                    </div> 
+                </a>
             </div>
 
-            <div className={styles.footer_mail}>  <a href="mailto:austineosiene@gmail.com" target='_blank' rel='noreferrer noopener' ><AiFillMail ></AiFillMail>contactus@gmail.com</a>
+            <div className={styles.footer_mail}> 
+             <a href="mailto:austineosiene@gmail.com" target='_blank' rel='noreferrer noopener' ><AiFillMail ></AiFillMail>
+            <div className={styles.email}>contactus@gmail.com</div>
+            </a>
         </div>
 
         </div>
@@ -99,7 +108,7 @@ const Footer = () => {
             </div>
         </div>
 
-        
+        </div>  
 
     </div>
   )

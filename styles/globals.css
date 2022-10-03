@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family:'Montserrat', sans-serif;
+  box-sizing: border-box;
   
 }
 
@@ -26,12 +27,20 @@ li{
   padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
     background: black;
+  }
+} */
+
+@media screen and (min-width:1200px) {
+  body,html{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
   }
 }

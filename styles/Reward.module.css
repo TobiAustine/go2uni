@@ -1,0 +1,21 @@
+.reward{
+    background:#fde9b2;
+    height: 30rem;
+    
+}
+
+.reward_container{
+    width: 80%;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.reward_text *{
+    margin: 4rem 0;
+}
+
+.reward_text p{
+    font-size: 1.5rem;
+}

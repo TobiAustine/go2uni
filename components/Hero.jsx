@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <div className={styles.hero}>
-        <div className={styles.container}>
+        <div className={styles.hero_container}>
             <div className={styles.hero_text}>
                 <div className={styles.hero_text_head}>
                    <h2>Welcome,</h2> 

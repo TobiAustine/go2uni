@@ -1,9 +1,46 @@
 import React from 'react'
 import styles from '../styles/TrendCard.module.css'
+import {FiUser, FiStar} from 'react-icons/fi'
+import Image from 'next/image'
 
-const Trendcard = () => {
+const Trendcard = ({src, topic, subject}) => {
   return (
-    <div>Trendcard</div>
+    <div className={styles.trendcard_container}>
+        <div className={styles.trendcard_container_image}>
+            {/* <img src={src} alt="" />  */}
+            <Image src={src} alt="" width={300} height={150}></Image>           
+        </div>
+
+        <div className={styles.trendcard_container_topic}>
+            <h2>{topic}</h2> 
+        </div>
+        <div className={styles.trendcard_container_subject}>
+        <div className={styles.trendcard_container_subject_name}>
+            {subject}
+        </div>
+        <div className={styles.trendcard_container_subject_ratings}>
+            <div className={styles.rating_user}>
+                <div className={styles.rating_icon}>
+                    <FiUser size={25}></FiUser>
+                </div>
+                <div className={styles.rating_stat}>
+                    <p>536</p>
+                </div>
+
+            </div>
+            <div className={styles.rating_stars}>
+            <div className={styles.rating_icon}>
+                    <FiStar size={25}></FiStar>
+                </div>
+                <div className={styles.rating_stat}>
+                    <p>4.9</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
   )
 }
 

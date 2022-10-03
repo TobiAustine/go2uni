@@ -1,10 +1,19 @@
 .footer{
-    height: 15rem;
-    width: 100vw;
+    height: 23rem;
+    /* width: 100vw; */
     background: var(--primary-color);
     font-size: 0.8rem;
     position: relative;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.footer_container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .footer_language{
@@ -34,6 +43,7 @@
     gap: 3rem;
     padding: 1rem 2rem;
     width: 100%;
+   
 }
 
 .footer_head{
@@ -42,6 +52,10 @@
 
 .footer_item{
     width: 20%;
+}
+
+.footer_item .footer_head{
+    margin-bottom: 1rem;
 }
 
 .footer_item .logo{
@@ -53,6 +67,10 @@
     margin-top: -1rem;
 }
 
+.footer_text *{
+    margin: 0.2rem 0;
+}
+
 .footer_phone{
     margin: 0.5rem 0;
     display: flex;
@@ -60,21 +78,23 @@
     margin-top: -2rem;
 }
 
-.footer_phone svg{
+.footer_phone a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
 }
 
-.footer_mail{
+
+.footer_mail a{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    position: relative;
+    margin-top: -0.5rem;
 }
 
- .footer_mail svg{
+ /* .footer_mail svg{
     padding-left: 0rem;
-} 
+}  */
 
 
 
@@ -82,6 +102,7 @@
 .footer_top .footer_list{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .footer_top .footer_list a{
@@ -92,7 +113,7 @@
 .footer_bottom{
     text-align: center;
     padding-bottom: 1rem;
-    margin-top: 0;
+    margin-top: 7rem;
 }
 
 .footer_bottom .terms{

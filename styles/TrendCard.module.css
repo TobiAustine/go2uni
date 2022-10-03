@@ -1,0 +1,46 @@
+.trendcard_container{
+    box-shadow: 0px 4px 32px 0px #0000004F;
+    border-radius: 1rem;
+    padding:1rem;
+    margin: 0.5rem;
+    height:20rem;
+    width: 20rem;
+}
+
+.trendcard_container_topic{
+    margin: 1.5rem 0;
+}
+
+.trendcard_container_topic h2{
+    font-size: 1.2rem;
+}
+
+.trendcard_container_subject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating_stars, .rating_user{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width:1024px) {
+    .trendcard_container{
+        padding:1rem;
+        margin: 0.5rem;
+        height:15rem;
+        width: 15rem;
+    }
+
+    .trendcard_container_topic{
+        margin: 0.5rem 0;
+    }
+
+    .trendcard_container_topic h2{
+        font-size: 1rem;
+    }
+}
