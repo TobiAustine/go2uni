@@ -84,3 +84,9 @@
     height: 100%;
   }
 }
+
+@media screen and (max-width:500px) {
+  .swiper_slide{
+    margin-right: 4rem !important;
+  }
+}

@@ -96,10 +96,10 @@ const Trend = () => {
 
       breakpoints={{
         //>=340px
-        540:{
-            width:540,
+        450:{
+            
             slidesPerView:1,
-            spaceBetween:10
+            spaceBetween:200
         },
         //>=768px
         768:{
