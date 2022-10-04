@@ -6,7 +6,7 @@ const ChoiceCard = ({src,head,text}) => {
   return (
     <div className={styles.choice_card}>
       <div className={styles.card_image}>
-        <Image src={src} width={90} height={90} alt=''></Image>
+        <Image src={src} width={30} height={30} alt=''></Image>
       </div>
       <div className={styles.card_text}>
         <h2>{head}</h2>

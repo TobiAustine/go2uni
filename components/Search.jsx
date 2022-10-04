@@ -21,10 +21,10 @@ const Search = () => {
             </div>
             
         <div className={styles.line1}>
-        <Image src='/Images/Vector1.png' width={300} height={30} alt=''></Image>
+        <Image src='/Images/Vector1.png' width={250} height={30} alt=''></Image>
       </div>
       <div className={styles.line2}>
-        <Image src='/Images/Vector1.png' width={300} height={30} alt=''></Image>
+        <Image src='/Images/Vector1.png' width={250} height={30} alt=''></Image>
       </div>
       <div className={styles.ellipse}>
         <Image src='/Images/Ellipse27.png' width={30} height={30} alt=''></Image>

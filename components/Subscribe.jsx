@@ -11,11 +11,15 @@ const Subscribe = () => {
                 <h2>Fill in your email address below to join our email newsletter.</h2>
             </div>
             <div className={styles.subscribe_body}>
-                <input type="email" name="" id="" placeholder='Subscribe to our Newsletter'/>
-                <div className={styles.subscribe_icon}>
-                    <TiLocationArrow size={35}></TiLocationArrow>
-                </div>
+                
+                <input type="email" name="" id="" placeholder='Subscribe to our Newsletter' />
+            
+                    <div className={styles.subscribe_icon}>
+                         <TiLocationArrow size={35} ></TiLocationArrow>
 
+                    </div>
+                    
+                   
             </div>
 
         </div>

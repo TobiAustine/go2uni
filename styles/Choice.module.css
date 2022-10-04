@@ -1,10 +1,11 @@
 .choice{
     /* background: red; */
+    height: 35rem;
 }
 
 .choice_container{
     width: 85%;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .choice_heading{
@@ -30,3 +31,27 @@
     gap: 3rem;
     margin: 2rem;
 }
+
+@media screen and (max-width:1200px) {
+ .choice_body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+ }   
+
+ .choice{
+    height: fit-content;
+}
+}
+
+@media screen and (max-width:700px) {
+    .choice_body{
+       display: grid;
+       grid-template-columns: 1fr;
+   
+    } 
+    
+    .choice{
+        height: fit-content;
+    }
+   }

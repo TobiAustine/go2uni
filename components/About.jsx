@@ -26,6 +26,7 @@ const About = () => {
 
               
             </div>
+            
             <div className={styles.about_text}>
                 <h2>ABOUT US</h2>
                 <p>Go2uni is an educational platform and academic social network targeted at Nigerian senior secondary school students to aid their preparation for university entry exams.</p>

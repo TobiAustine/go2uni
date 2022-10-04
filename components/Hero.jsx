@@ -24,13 +24,13 @@ const Hero = () => {
             </div>
 
             <div className={styles.hero_image}>
-                <div className={styles.image1}><Image src='/Images/Ellipse2.png' width='150%' height='150%' objectFit='contain' alt=''></Image></div>
+                <div className={styles.image1}><Image src='/Images/Ellipse2.png' width='150%' height='150%' alt=''></Image></div>
                  
-                 <div className={styles.image2}><Image src='/Images/image6.png' width='150%' height='150%'objectFit='contain' alt=''></Image></div>
+                 <div className={styles.image2}><Image src='/Images/image6.png' width='150%' height='150%'alt=''></Image></div>
                 
-                <div className={styles.image3}><Image src='/Images/image5.png' width='150%' height='150%'objectFit='contain' alt=''></Image></div>
+                <div className={styles.image3}><Image src='/Images/image5.png' width='150%' height='150%' alt=''></Image></div>
                 
-                <div className={styles.image4}><Image src='/Images/image4.png' width='150%' height='150%'objectFit='contain' alt=''></Image></div> 
+                <div className={styles.image4}><Image src='/Images/image4.png' width='150%' height='150%' alt=''></Image></div> 
                 
             </div>
 
