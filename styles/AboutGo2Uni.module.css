@@ -119,4 +119,8 @@
     .about_banner{
         height: 10rem !important;
     }
+
+    .about_main{
+        padding: 2rem;
+    }
 }
