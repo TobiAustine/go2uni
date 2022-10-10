@@ -1,0 +1,72 @@
+.completeprofile{
+    margin-top: 5rem;
+    background:#f9f2e0;
+    /* height: calc( 100vh - 5rem);
+ height: fit-content; */
+ height: fit-content;
+ padding-bottom: 2rem;
+}
+
+.completeprofile h2{
+    text-align: center;
+    padding-block:2rem ;
+}
+
+.profileform_container{
+    background: #fff;
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.profileform_container div{
+    margin: 1rem 0;
+}
+
+.profileform_container label{
+    display: block;
+}
+
+.profileform_container input, .profileform_container select{
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    border: 2px solid transparent;
+    outline: none;
+    background:#d9d9d94d;
+    font-family:'Montserrat', sans-serif;
+    
+}
+.profileform_container option{
+    padding-right: 2rem;
+}
+
+.profileform_container button{
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    margin-top: 2rem;
+    width: 5rem;
+    margin-inline: auto;
+}
+
+.profileform_container button:hover{
+    background: #fff;
+    border-color: var(--primary-color);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width:768px) {
+    .profileform_container input, .completeprofile select{
+        width: 100%;
+    }
+
+    .profileform_container{
+        width: 80%;
+    }
+}

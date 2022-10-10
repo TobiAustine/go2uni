@@ -10,6 +10,8 @@ body {
 
 :root{
   --primary-color : #fabd17;
+  --transition: 1s ease;
+  --font:'Montserrat', sans-serif;
 }
 
 a {
@@ -22,6 +24,10 @@ li{
   list-style: none;
 }
 
+
+button, input{ 
+  font-family:'Montserrat', sans-serif;
+}
 * {
   box-sizing: border-box;
   margin: 0;

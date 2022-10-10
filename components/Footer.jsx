@@ -20,7 +20,7 @@ const Footer = () => {
 
         <div className={styles.logo_text}>
           
-            <Link href="/"><a href=""><h2>GO2UNI</h2></a></Link> 
+     <Link href="/"><a href=""><h2>GO<span style={{color:'white', fontSize:'1.2rem'}}>2</span>UNI</h2></a></Link> 
         </div>
 
         </div>

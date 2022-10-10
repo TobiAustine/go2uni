@@ -1,12 +1,13 @@
 .statistics{
     height: 10rem;
+    /* height: calc(100vh - 30rem); */
     /* width: 100vw; */
     display: flex;
     align-items: center;
     background: var(--primary-color); 
      background-image: url('../public/Images/image7.png');
      background-position: center; 
-     margin-top: 2rem;
+      margin-top: 2rem;
 }
 
 .statistics_container{
