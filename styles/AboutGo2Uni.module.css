@@ -23,6 +23,7 @@
 
 .about_text p{
     margin-bottom: 3rem;
+    text-align: justify;
 }
 
 .about_text h2{

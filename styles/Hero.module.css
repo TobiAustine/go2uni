@@ -213,6 +213,12 @@
 }
 
 @media screen and (max-width:450px) {
+
+    .hero_text{
+        margin-left: 0rem;
+    }
+
+
     .hero_text_head h2{
         font-size: 2rem;
     }

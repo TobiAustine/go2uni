@@ -24,7 +24,7 @@ const Aboutpage = () => {
 
           <p>
             We offer innovative solutions to the high cost of
-            education,traditional learning and fallen standard of education.
+            education, traditional learning and fallen standard of education.
           </p>
 
             <div className={styles.inline_images}>

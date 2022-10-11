@@ -1,13 +1,14 @@
 import styles from '../styles/NavBar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import {IoIosArrowDown, IoMdClose} from 'react-icons/io'
+import {IoIosArrowDown, IoMdClose, IoIosArrowUp} from 'react-icons/io'
 import {FaGraduationCap} from 'react-icons/fa'
 import {useState} from 'react'
 import {HiMenuAlt3} from 'react-icons/hi'
 import {GrFormClose} from 'react-icons/gr'
 import { useEffect } from 'react'
 import { BsGlobe} from 'react-icons/bs'
+import Dropdown from './Dropdown'
 
 
 const Navbar = () => {
@@ -33,7 +34,49 @@ const  toggleMenuIcon = () => {
        changeBackground()
        window.addEventListener('scroll', changeBackground)}
        )
-     
+
+
+    //  useEffect(() => {
+    //          window.addEventListener('click', () =>{
+    //     setMobileMenu(false)})
+    //      })
+            
+   
+     const [dropdown, setDropdown] = useState(false)
+
+      const toggleDropdown = () => {
+        console.log('clicked')
+             setDropdown(!dropdown)  
+      }
+
+    //  const onMouseEnter = () => {
+    //      if(window.innerWidth < 1024){
+    //          setDropdown(false)
+    //          console.log('no')
+    //      }else{
+    //          setDropdown(true)
+
+    //      }
+    //     setDropdown(true)
+    //  }
+
+    //  const onMouseEnter = () => {
+    //     setDropdown(true)
+    //  }
+
+    //  const onMouseLeave = () => {
+    //     setDropdown(false)
+    //  }
+
+    //  const onMouseLeave = () => {
+    //     if(window.innerWidth < 1024){
+    //         setDropdown(false)
+    //         console.log('yes')
+    //     }else{
+    //         setDropdown(false)
+    //     } 
+    //     setDropdown(false)
+    //  }
 
   return (
      <div className={` ${styles.navbar}   ${navbar ?  styles.navbar_active : styles.navbar}`}>
@@ -54,16 +97,24 @@ const  toggleMenuIcon = () => {
 
         <div className={` ${styles.nav_menu} ${mobileMenu ? styles.mobile_nav_menu : styles.mobile_nav_menu_hidden} `}>
             <ul>
-                <li> <Link href='/'>Home</Link> </li>
-                <li> <Link href='/about'>About Us</Link></li>
-                <li> <Link href='/category'><a> Category <IoIosArrowDown className={styles.arrow}></IoIosArrowDown></a></Link></li>
-                <li> <Link href='/contact'>Contact Us</Link></li>
+                <li onClick={() => setMobileMenu(false)}> <Link href='/'>Home</Link> </li>
+
+
+                <li onClick={() => setMobileMenu(false)}> <Link href='/about'>About Us</Link></li>
+
+
+                <li className={styles.category}  onClick={toggleDropdown}> Departments <IoIosArrowDown className={styles.arrow}></IoIosArrowDown>
+                {dropdown && <Dropdown onClick={() => setMobileMenu(false)}></Dropdown>}
+                
+                
+                
+                 </li>
+
+
+                <li onClick={() => setMobileMenu(false)}> <Link href='/contact'>Contact Us</Link></li>
             </ul>
 
-        </div>
-
-
-
+            
         <div className={styles.nav_cta}>
                 <Link href='/signup'><a className={styles.sign_up}>Sign Up</a></Link>
                 <Link href='/login'><a className={styles.login}> Log In</a></Link>
@@ -81,12 +132,14 @@ const  toggleMenuIcon = () => {
         </div>
 
 
-
-        <div className={styles.nav_icons} onClick={toggleMenuIcon}>
-             {mobileMenu ? <IoMdClose size ={25} /> : <HiMenuAlt3 size = {25}/>} 
-            
         </div>
 
+
+
+ <div className={styles.nav_icons} onClick={toggleMenuIcon}>
+             {mobileMenu ? <IoMdClose size ={40} /> : <HiMenuAlt3 size = {40}/>} 
+            
+        </div>
 
 
 
