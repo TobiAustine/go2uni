@@ -162,6 +162,10 @@
     .login_text form{
         width: 100%;
     }
+    
+    .remember{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -169,7 +173,5 @@
         padding: 0.5rem;
     }
 
-    .remember{
-        flex-direction: column;
-    }
+    
 }

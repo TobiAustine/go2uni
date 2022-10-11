@@ -79,6 +79,12 @@
     }
 }
 
+@media screen and (max-width:600px) {
+    .testimonial{
+        height: fit-content;
+    }
+}
+
 @media screen and (max-width:450px) {
     .testimonial{
         height: fit-content;

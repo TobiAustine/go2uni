@@ -43,7 +43,8 @@ const Subscribe = () => {
                 <input type="email" name="" id="" placeholder='Subscribe to our Newsletter' />
             
                     <div className={styles.subscribe_icon}>
-                         <TiLocationArrow size={35} ></TiLocationArrow>
+                      <button type="submit"> <TiLocationArrow size={35} ></TiLocationArrow></button>
+                        
 
                     </div>
                     

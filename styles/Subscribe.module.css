@@ -28,14 +28,42 @@
     font-size: 1.2rem;
 }
 
-.subscribe_icon{
+.subscribe_icon button{
+    background: transparent;
     background: var(--primary-color);
-    padding:0.5rem 2rem;
+    padding:0.2rem 1rem;
     position: absolute;
     right: 17%;
-    top: 0.7rem;
+    top: 1.2rem;
     border-radius: 2rem; 
+    border: none;
     
+}
+
+.subscribe_body input::placeholder{
+    font-size:95%;
+}
+
+@media screen and (max-width:600px) {
+    .subscribe{
+        height: fit-content;
+    }
+
+    .subscribe_body input{
+        width: 85%;
+        padding: 1.5rem;
+    }
+
+    .subscribe_icon button{
+        right: 11%;
+        top: 1rem;
+    }
+
+    .subscribe_body input::placeholder{
+        font-size:1.1rem;
+    }
+
+
 }
 
 @media screen and (max-width:500px) {
@@ -54,10 +82,16 @@
         padding: 1.5rem;
     }
 
-    .subscribe_icon{
+    .subscribe_icon button{
         padding:0.1rem 0.2rem;
         top: 1rem;
-        right: 4%;
+        right: 5%;
         font-size: 0.1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .subscribe_body input::placeholder{
+        font-size:0.8rem;
     }
 }

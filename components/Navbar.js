@@ -115,13 +115,13 @@ const  toggleMenuIcon = () => {
             </ul>
 
             
-        <div className={styles.nav_cta}>
+        <div className={styles.nav_cta} onClick={() => setMobileMenu(false)}>
                 <Link href='/signup'><a className={styles.sign_up}>Sign Up</a></Link>
                 <Link href='/login'><a className={styles.login}> Log In</a></Link>
 
         </div>
 
-        <div className={styles.navbar_language}>
+        <div className={styles.navbar_language} onClick={() => setMobileMenu(false)}>
             <BsGlobe size={15}></BsGlobe>
             <select name="language" id="">
                 <option value="English">English</option>
