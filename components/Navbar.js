@@ -20,12 +20,12 @@ const  toggleMenuIcon = () => {
 
         <div className={styles.logo}>
         <div className={styles.logo_icon}>
-            <Link href="/"><a > <FaGraduationCap size={40}></FaGraduationCap></a></Link>
+            <Link href="/Home"><a > <FaGraduationCap size={40}></FaGraduationCap></a></Link>
         </div>
 
         <div className={styles.logo_text}>
           
-            <Link href="/"><a href=""><p>GO<span>2</span>UNI</p></a></Link> 
+            <Link href="/Home"><a href=""><p>GO<span>2</span>UNI</p></a></Link> 
         </div>
 
         </div>
@@ -34,8 +34,8 @@ const  toggleMenuIcon = () => {
             <ul>
                 <li> <Link href='/'>Home</Link> </li>
                 <li> <Link href='/about'>About Us</Link></li>
-                <li> <Link href='/category'><a> Category <IoIosArrowDown className={styles.arrow}></IoIosArrowDown></a></Link></li>
-                <li> <Link href='/contact'>Contact Us</Link></li>
+                <li> <Link href='/category'><a> Department <IoIosArrowDown className={styles.arrow}></IoIosArrowDown></a></Link></li>
+                <li> <Link href='/contactuspage'>Contact Us</Link></li>
             </ul>
 
         </div>

@@ -6,11 +6,11 @@ import Link from "next/link";
 const Aboutpage = () => {
   return (
     <div className={styles.about}>
-      <div className={styles.about_banner} style={{ width: "100vw", height: "13rem", position: "relative" }}>
+      <div className={styles.about_banner} style={{ width: "100vm", height: "13rem", position: "relative" }}>
         <Image src="/Images/aboutus.png" alt="About Us" layout="fill"></Image>
       </div>
 
-   
+
 
       <div className={styles.about_main}>
         

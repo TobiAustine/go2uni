@@ -1,15 +1,17 @@
 .navbar{
-    height: 5rem;
-    width: 100vw;
-    padding: 2rem;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     position: fixed;
     top: 0;
-    background: var(--primary-color); 
+    height: 50px;
+    width: 100%;
+    background: white; 
     z-index: 999;
+    border-bottom: #757575 0.5px solid;
+    font-size: 16px;
 }
 
 .logo{
@@ -18,26 +20,28 @@
     align-items: center;    
 }
 
-.logo .logo_icon{
+.logo_icon{
     margin-top: 1rem;
+    margin-left: 20px;
 }
 
 
-.logo .logo_text{
-    font-size: 2rem;
+.logo_text{
+    font-size: 24px;
 }
 
-.logo .logo_text span{
-    color:#eee;
-    font-size: 3rem;
-    padding: 0.1rem 0.1rem 0;
+.logo_text span{
+    color: var(--primary-color);
+    font-size: 40px;
+    padding: 1px 1px;
 }
 
 .nav_menu ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 72px;
+    font-size: 16px;
 }
 
 .nav_menu ul li:nth-child(3){
@@ -54,13 +58,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
+    margin-right: 50px;
 }
 
 .nav_cta .login{
-    background: #eee;
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    border-radius: 6px;
+    padding: 6px 24px;
+    font-size: 16px;
    
 }
 
@@ -72,7 +78,7 @@
    
     .nav_cta{
         gap: 0.5rem;
-        font-size: 0.7rem;
+        font-size: 16px;
         
     }
 
