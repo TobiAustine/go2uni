@@ -4,7 +4,8 @@ import Trendcard from './Trendcard'
 import Body from '../public/Images/human.png'
 import account from '../public/Images/account.png'
 import math from '../public/Images/math.png'
-
+import {IoIosArrowDropright} from 'react-icons/io'
+import Link from 'next/link'
 
 // import Swiper, { Navigation, Pagination } from 'swiper';
 // // import Swiper and modules styles
@@ -138,6 +139,13 @@ const Trend = () => {
     </div>
 
       </div>
+
+      <div className={styles.more_topics}>
+          <Link href='/topics'><a> See more topics <IoIosArrowDropright></IoIosArrowDropright>
+            
+            </a></Link>
+      </div>
+    
 
 
       </div>

@@ -25,7 +25,7 @@ li{
 }
 
 
-button, input, select{ 
+button, input, select, label{ 
   font-family:'Montserrat', sans-serif;
 }
 * {

@@ -1,10 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from '../styles/Login.module.css'
 import Image from 'next/image'
 import {FcGoogle} from 'react-icons/fc'
 import Link from 'next/link'
 
 const Login = () => {
+    const [formData, setformData] = useState({
+      email:'',
+      password:''
+    })
+
+    const onChange = (e) => {
+      setformData(e.target.value)
+    }
+
+
+
   const onSubmit = (e) => {
     e.preventDefault()
  }
@@ -34,13 +45,13 @@ const Login = () => {
 
                 <div className={styles.email}>
                     <label htmlFor="email">Email Address</label>
-                    <input type="email" name="email" id="" />
+                    <input type="email" name="email" id="" value={formData.email} onChange={onChange}/>
                 </div>
 
 
                 <div className={styles.password}>
                     <label htmlFor="email">Password</label>
-                    <input type="password" name="password" id="" />
+                    <input type="password" name="password" id="" value={formData.password} onChange={onChange}/>
                 </div>
 
 

@@ -1,0 +1,75 @@
+.contact_bold{
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 32px;
+    padding-top: 100px;
+}
+.contact_text {
+    font-size: 12px;
+}
+
+.contact_center_text {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 7px;
+}
+.form_sect {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    gap: 25%;
+    text-align: left;
+}
+.form_value{
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.form_box {
+        width: 400px;
+        height: 32px;
+        border-color: #fabd17;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        justify-content: left;
+    
+}
+.Desp_box {
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-color: #fabd17;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        resize: none;
+}
+
+@media screen and (max-width:600px) {
+    .col-25, .col-75, .form_sect {
+        width: 100%; margin-top: 0;
+    }
+}
+.send_col {
+    background-color: #fabd17;
+    margin-top: 20px;
+    margin-left: 65%;
+    width: 35%;
+    height: 35px;
+    border-color: #fabd17;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 200;
+    font-weight: medium !important;
+}
+
+ .send_col :hover {
+    opacity: 0.9;
+    transition: 0.5s
+}

@@ -45,7 +45,6 @@ const Subscribe = () => {
                     <div className={styles.subscribe_icon}>
                       <button type="submit"> <TiLocationArrow size={35} ></TiLocationArrow></button>
                         
-
                     </div>
                     
                    

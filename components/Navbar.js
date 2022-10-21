@@ -111,7 +111,7 @@ const  toggleMenuIcon = () => {
                  </li>
 
 
-                <li onClick={() => setMobileMenu(false)}> <Link href='/contact'>Contact Us</Link></li>
+                <li onClick={() => setMobileMenu(false)}> <Link href='/contact-us'>Contact Us</Link></li>
             </ul>
 
             
